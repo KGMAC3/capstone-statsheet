@@ -10,3 +10,35 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+h1 {
+  font-size: 2em; /* 40px/16=2.5em */
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+}
+
+h2 {
+  font-size: 1em; /* 30px/16=1.875em */
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+body {
+  background-color: #1e88e5;
+}
+
+body {
+  /* background-image: ; */
+}
+
+#container {
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: tomato;
+}
