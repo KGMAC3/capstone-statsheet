@@ -53,3 +53,13 @@ li {
 .player-name:hover {
   color: rgb(125, 10, 233);
 }
+
+button {
+  border: 2px solid #00bfff;
+  background-image: url("https://image.freepik.com/free-vector/yellow-comic-zoom-lines-background_1017-15136.jpg");
+  color: #155697;
+  padding: 14px 28px;
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+}

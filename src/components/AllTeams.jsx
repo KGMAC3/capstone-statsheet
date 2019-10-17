@@ -9,7 +9,7 @@ class AllTeams extends Component {
   componentDidMount() {
     axios
       .get(
-        `http://lookup-service-prod.mlb.com/json/named.team_all_season.bam?sport_code='mlb'&all_star_sw='N'&sort_order=name_asc&season='2019'`
+        `https://lookup-service-prod.mlb.com/json/named.team_all_season.bam?sport_code='mlb'&all_star_sw='N'&sort_order=name_asc&season='2019'`
       )
       .then(resp => {
         console.log(resp.data)
@@ -28,7 +28,7 @@ class AllTeams extends Component {
                 <h1>
                   <Link
                     className='player-name'
-                    to={`/${this.state.allteams[i].team_id}`}
+                    to={`team/${this.state.allteams[i].team_id}`}
                   >
                     {team.name_display_full}
                   </Link>

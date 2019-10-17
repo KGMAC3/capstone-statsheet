@@ -1,11 +1,12 @@
 import React, { Component } from "react"
 import axios from "axios"
 import moment from "moment"
-
+import { Link } from "react-router-dom"
 class Player extends Component {
   state = {
     player: null,
-    playerId: "493316"
+    playerId: "",
+    teamId: ""
   }
   componentDidMount() {
     axios
@@ -23,6 +24,9 @@ class Player extends Component {
     console.log(this.state)
     return (
       <div>
+        <Link to={`/team/${this.props.match.params.teamId}`}>
+          <button>Back</button>
+        </Link>
         <ul>
           <li>
             {this.state.player && (

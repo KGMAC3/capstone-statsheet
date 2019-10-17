@@ -12,8 +12,12 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path='/login' component={Login} />
-            <Route exact path='/player/:playerId' component={Player} />
-            <Route exact path='/:teamId' component={AllPlayers} />
+            <Route
+              exact
+              path='/team/:teamId/player/:playerId'
+              component={Player}
+            />
+            <Route exact path='/team/:teamId' component={AllPlayers} />
             <Route exact path='/' component={AllTeams} />
           </Switch>
         </Router>

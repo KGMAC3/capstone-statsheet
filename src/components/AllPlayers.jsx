@@ -11,7 +11,7 @@ class AllPlayers extends Component {
   componentDidMount() {
     axios
       .get(
-        `http://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id=%27${this.props.match.params.teamId}%27`
+        `https://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id=%27${this.props.match.params.teamId}%27`
       )
       .then(resp => {
         console.log(resp.data)
@@ -24,6 +24,9 @@ class AllPlayers extends Component {
     console.log(this.state.allPlayers)
     return (
       <div id='container'>
+        <Link to='/'>
+          <button>Back</button>
+        </Link>
         <ul>
           {this.state.allPlayers.map((player, i) => {
             return (
@@ -31,7 +34,7 @@ class AllPlayers extends Component {
                 <h1>
                   <Link
                     className='player-name'
-                    to={`/player/${this.state.allPlayers[i].player_id}`}
+                    to={`/team/${this.props.match.params.teamId}/player/${this.state.allPlayers[i].player_id}`}
                   >
                     {player.name_display_first_last}
                   </Link>
