@@ -13,15 +13,15 @@ body {
 }
 
 h1 {
-  font-size: 2.5em; /* 40px/16=2.5em */
+  font-size: 3em; /* 40px/16=2.5em */
   font-family: "Courier New", Courier, monospace;
-  color: rgb(1, 51, 75);
+  color: black;
 }
 
 h2 {
-  font-size: 1.3rem; /* 30px/16=1.875em */
+  font-size: 1.42rem; /* 30px/16=1.875em */
   font-family: "Courier New", Courier, monospace;
-  color: #1c6dbe;
+  color: black;
 }
 
 body {
@@ -42,7 +42,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   width: 300px;
-  border: 15px solid#00BFFF;
+  border: 15px solid black;
   padding: 50px;
   margin: 20px;
   text-align: center;
