@@ -39,6 +39,8 @@ ul {
 li {
   background-image: url("https://image.freepik.com/free-vector/yellow-comic-zoom-lines-background_1017-15136.jpg");
   padding: 10mm;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 300px;
   border: 15px solid#00BFFF;
   padding: 50px;
