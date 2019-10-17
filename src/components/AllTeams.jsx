@@ -39,7 +39,9 @@ class AllTeams extends Component {
                   Location: {team.city}, {team.state}
                 </h2>
                 <h2>Address: {team.address_line1}</h2>
-                <h2>Website:{team.website_url}</h2>
+                <a href={"http://" + team.website_url}>
+                  <h2>Website:{team.website_url}</h2>
+                </a>
               </li>
             )
           })}
