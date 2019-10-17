@@ -26,13 +26,20 @@ class AllTeams extends Component {
             return (
               <li key={i}>
                 <h1>
-                  <Link to={`/${this.state.allteams[i].team_id}`}>
-                    Team Name:
+                  <Link
+                    className='player-name'
+                    to={`/${this.state.allteams[i].team_id}`}
+                  >
                     {team.name_display_full}
                   </Link>
                 </h1>
+                <h2>Division: {team.division_full}</h2>
+                <h2>Field Name:{team.venue_name}</h2>
+                <h2>
+                  Location: {team.city}, {team.state}
+                </h2>
                 <h2>Address: {team.address_line1}</h2>
-                <h2>State: {team.state}</h2>
+                <h2>Website:{team.website_url}</h2>
               </li>
             )
           })}

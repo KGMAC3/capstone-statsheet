@@ -27,10 +27,7 @@ class Player extends Component {
           <li>
             {this.state.player && (
               <div>
-                <h1>
-                  Player name:
-                  {this.state.player.name_display_first_last}
-                </h1>
+                <h1>{this.state.player.name_display_first_last}</h1>
                 <h2>
                   Date of Birth:
                   {this.state.player.birth_date &&
@@ -39,7 +36,7 @@ class Player extends Component {
                 <h2>Team: {this.state.player.team_name}, </h2>
                 <h2>
                   Position:
-                  {this.state.player.position_txt}
+                  {this.state.player.primary_position_txt}
                 </h2>
                 <h2>Batting Hand: {this.state.player.bats}</h2>
                 <h2>Throwing Hand: {this.state.player.throws}</h2>

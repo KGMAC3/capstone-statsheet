@@ -28,8 +28,11 @@ class AllPlayers extends Component {
             return (
               <li key={i}>
                 <h1>
-                  <Link to={`/player/${this.state.allPlayers[i].player_id}`}>
-                    Player Name: {player.name_display_first_last}
+                  <Link
+                    className='player-name'
+                    to={`/player/${this.state.allPlayers[i].player_id}`}
+                  >
+                    {player.name_display_first_last}
                   </Link>
                 </h1>
                 <h2>

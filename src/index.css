@@ -9,36 +9,47 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-image: url("./components/Images/1432866641_preview_background-kalender-keren-4.jpg");
 }
 
 h1 {
-  font-size: 2em; /* 40px/16=2.5em */
+  font-size: 2.5em; /* 40px/16=2.5em */
   font-family: "Courier New", Courier, monospace;
-  color: black;
+  color: rgb(1, 51, 75);
 }
 
 h2 {
-  font-size: 1em; /* 30px/16=1.875em */
+  font-size: 1.5rem; /* 30px/16=1.875em */
   font-family: "Courier New", Courier, monospace;
-  color: white;
+  color: #1c6dbe;
 }
 
 body {
-  background-color: #1e88e5;
-}
-
-body {
-  /* background-image: ; */
-}
-
-#container {
-  width: 80%;
+  background-color: black;
 }
 
 ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 li {
-  background-color: tomato;
+  background-image: url("https://image.freepik.com/free-vector/yellow-comic-zoom-lines-background_1017-15136.jpg");
+  padding: 10mm;
+  width: 300px;
+  border: 15px solid#00BFFF;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+}
+
+.player-name {
+  text-decoration: none;
+  color: inherit;
+}
+.player-name:hover {
+  color: rgb(125, 10, 233);
 }
