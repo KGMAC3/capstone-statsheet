@@ -57,12 +57,12 @@ li {
 }
 
 button {
-  border: 2px solid #00bfff;
+  border: 5px solid black;
   background-image: url("https://image.freepik.com/free-vector/yellow-comic-zoom-lines-background_1017-15136.jpg");
-  color: #155697;
+  color: black;
   padding: 14px 28px;
   font-family: monospace;
-  font-size: 16px;
+  font-size: 40px;
   cursor: pointer;
 }
 
